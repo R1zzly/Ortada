@@ -1,0 +1,279 @@
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+   background-color: #fafafa;
+   font-family: 'Spartan', sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+@media (min-width: 701px) {
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color: #fff;}
+
+#about > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+.fixed #about a {
+    color: #343434;
+}
+
+.fixed #about a:hover {
+    color: #7c7c7c;
+}
+
+#top {
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-blend-mode: multiply;
+    background-color: #1c347c;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+        height: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1.3em;
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+}
+
+#top h3 {
+    color: #ccc;
+}
+
+#main {
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #main{
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #main{
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main div{
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2 {
+    font-size: 3em;
+}
+
+#main span{
+    color: #a0a0a0;
+}
+
+#skills {
+    float: left;
+    background-image: url(https://lh3.googleusercontent.com/N0T5lJVl2P0A5yF2NfSPcrEPDV4EJ77GDIKR61J5AR6ZoTBqI6Cn4_kAcER3kEsW1MHMDkImBWa0a8P4n_915t8tgg=w640-h400-e365-rj-sc0x00ffffff);
+    background-blend-mode: multiply;
+    background-color: #0d200e;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#skills h2 {
+    font-size: 4em;
+}
+
+#skills span{
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+#skills .image {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#skills .image:nth-child(odd) {
+    margin-left: 18%;
+}
+
+#skills img {
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#skills span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+}
+#skills .image {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        margin-top: 50px;
+}
+    
+    #skills .image:nth-child(odd) {
+        margin-left: 18%;
+    }
+    
+    #skills img {
+        background: #fafafa;
+        padding: 5px;
+        border: 2px solid silver;
+        float: left;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    #skills span {
+        float: left;
+        width: 100%;
+        font-size: 2em;
+        margin-top: 10px;
+    }
+    
+    @media (max-width: 700px) {
+        #skills .image {
+            width: 80%!important;
+            margin-right: 0!important;
+            margin-left: 10%!important;
+        }
+}
